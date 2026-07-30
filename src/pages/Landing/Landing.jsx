@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import {
   ArrowRight,
   CalendarDays,
@@ -88,10 +89,10 @@ export default function Landing() {
               Entrar
             </button>
 
-            <button className="button button-primary button-small" type="button">
-              Testar agora
-              <ArrowRight size={17} />
-            </button>
+           <Link className="button button-primary button-small" to="/agendar">
+  Testar agora
+  <ArrowRight size={17} />
+</Link>
           </div>
         </div>
       </header>
@@ -119,10 +120,10 @@ export default function Landing() {
             </p>
 
             <div className="hero-actions">
-              <button className="button button-primary button-large" type="button">
-                Criar minha agenda
-                <ArrowRight size={19} />
-              </button>
+              <Link className="button button-primary button-large" to="/agendar">
+  Criar minha agenda
+  <ArrowRight size={19} />
+</Link>
 
               <button
                 className="button button-secondary button-large"
